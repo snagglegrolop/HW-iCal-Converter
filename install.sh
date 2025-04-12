@@ -1,4 +1,3 @@
-#!/bin/bash
 set -e
 
 if [[ $(uname -m) == "arm64" ]]; then
@@ -8,11 +7,10 @@ else
 fi
 
 echo "Downloading HWiCal..."
-curl -L -o /tmp/HWiCal.zip https://github.com/snagglegrolop/HW-iCal-Converter/releases/download/v1.0.0/HWiCal.zip
-unzip -o /tmp/HWiCal.zip -d /tmp
+curl -L -o /tmp/HWiCal https://github.com/snagglegrolop/HW-iCal-Converter/releases/download/v1.0.0/HWiCal
 
 echo "🔧 Installing to $INSTALL_DIR..."
 sudo mv /tmp/HWiCal "$INSTALL_DIR/HWiCal"
 sudo chmod +x "$INSTALL_DIR/HWiCal"
 
-echo "Done! Try running: HWiCal"
+echo "✅ Done! Try running: HWiCal"
