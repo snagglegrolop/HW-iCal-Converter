@@ -13,4 +13,4 @@ echo "🔧 Installing to $INSTALL_DIR..."
 sudo mv /tmp/HWiCal "$INSTALL_DIR/HWiCal"
 sudo chmod +x "$INSTALL_DIR/HWiCal"
 
-echo "✅ Done! Try running: HWiCal"
+echo "Done! Try running: HWiCal"
